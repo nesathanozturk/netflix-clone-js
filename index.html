@@ -1,0 +1,209 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Ana Sayfa - Netflix</title>
+</head>
+<body>
+
+ <!-- Navbar -->
+    <div class="nav" id="nav">
+        <img src="/image/netflixlogo.png" alt="" class="nav__logo">
+        <img src="/image/netflixavatar.png" alt="" class="nav__avatar">
+    </div>
+
+<!-- Banner -->
+    <div class="banner" id="banner">
+    <video id="video" class="banner" poster="/image/peakyblindersbanner.jpg" style="pointer-events: none;" src="/videos/peakyblinders.mp4" type="video/mp4">
+    </video>
+    <div class="banner__contents">
+        <h1 class="banner__title">Peaky Blinders</h1>
+        <div class="banner__buttons">
+            <button class="banner_button" id="btnPlayPause" accesskey="p" onclick="playPauseVideo();">Oynat</button>
+            <button class="banner_button">Listem</button>
+        </div>
+        <div class="banner_desc">
+            1919 yılında İngiltere, Birmingham'daki bir suç çetesinin başında ne pahasına olursa olsun yükselmeyi kafasına koymuş, acımasız mafya babası Tommy Shelby vardır.
+        </div>
+    </div>
+    </div>
+
+<!-- Senin İçin En İyi Seçimler -->
+    <div class="row">
+        <h2>Senin İçin En İyi Seçimler</h2>
+        <div class="row__posters">
+            <img src="/image/large/Breaking Bad.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Peaky Blinders.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Stranger Things.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Mr. Robot.png" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Narcos.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Punisher.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/İron Fist.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Dark.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/El Camino.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Daredevil.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Breaking Bad.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Peaky Blinders.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Stranger Things.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="/image/large/Mr. Robot.png" alt="" class="row_poster row_posterLarge">
+        </div>
+    </div>
+
+<!-- Yeni Çıkanlar -->
+    <div class="row">
+        <h2>Yeni Çıkanlar</h2>
+        <div class="row__posters">
+            <img src="/image/small/Breaking Bad.jpg" alt="" class="row_poster">
+            <img src="/image/small/Peaky Blinders.jpg" alt="" class="row_poster">
+            <img src="/image/small/Stranger Things.jpg" alt="" class="row_poster">
+            <img src="/image/small/Mr. Robot.png" alt="" class="row_poster">
+            <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+            <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+            <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+            <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+            <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+            <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+            <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+            <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+            <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+            <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+            <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+            <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+            <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+            <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+            <img src="/image/small/Breaking Bad.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+
+<!-- Trendler -->
+        <div class="row">
+            <h2>Trendler</h2>
+            <div class="row__posters">
+                <img src="/image/small/Breaking Bad.jpg" alt="" class="row_poster">
+                <img src="/image/small/Peaky Blinders.jpg" alt="" class="row_poster">
+                <img src="/image/small/Stranger Things.jpg" alt="" class="row_poster">
+                <img src="/image/small/Mr. Robot.png" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+
+<!-- Komedi Dizileri -->
+         <div class="row">
+            <h2>Komedi Dizileri</h2>
+            <div class="row__posters">
+                <img src="/image/small/Breaking Bad.jpg" alt="" class="row_poster">
+                <img src="/image/small/Peaky Blinders.jpg" alt="" class="row_poster">
+                <img src="/image/small/Stranger Things.jpg" alt="" class="row_poster">
+                <img src="/image/small/Mr. Robot.png" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+
+<!-- Aksiyon Dizileri -->
+         <div class="row">
+            <h2> Aksiyon Dizileri</h2>
+            <div class="row__posters">
+                <img src="/image/small/Breaking Bad.jpg" alt="" class="row_poster">
+                <img src="/image/small/Peaky Blinders.jpg" alt="" class="row_poster">
+                <img src="/image/small/Stranger Things.jpg" alt="" class="row_poster">
+                <img src="/image/small/Mr. Robot.png" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Peaky Blinders.jpg" alt="" class="row_poster">
+                <img src="/image/small/Stranger Things.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+
+<!-- Bilim Kurgu Filmleri -->
+         <div class="row">
+            <h2>Bilim Kurgu Filmleri</h2>
+            <div class="row__posters">
+                <img src="/image/small/Breaking Bad.jpg" alt="" class="row_poster">
+                <img src="/image/small/Peaky Blinders.jpg" alt="" class="row_poster">
+                <img src="/image/small/Stranger Things.jpg" alt="" class="row_poster">
+                <img src="/image/small/Mr. Robot.png" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+
+<!-- Gerilim Filmleri -->
+         <div class="row">
+            <h2>Gerilim Filmleri</h2>
+            <div class="row__posters">
+                <img src="/image/small/Breaking Bad.jpg" alt="" class="row_poster">
+                <img src="/image/small/Peaky Blinders.jpg" alt="" class="row_poster">
+                <img src="/image/small/Stranger Things.jpg" alt="" class="row_poster">
+                <img src="/image/small/Mr. Robot.png" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+                <img src="/image/small/İron Fist.jpg" alt="" class="row_poster">
+                <img src="/image/small/Dark.jpg" alt="" class="row_poster">
+                <img src="/image/small/El Camino.jpg" alt="" class="row_poster">
+                <img src="/image/small/Daredevil.jpg" alt="" class="row_poster">
+                <img src="/image/small/Narcos.jpg" alt="" class="row_poster">
+                <img src="/image/small/Punisher.jpg" alt="" class="row_poster">
+            </div>
+        </div>
+
+    <!-- JavaScript -->
+        <script src="/main.js"></script>
+
+</body>
+</html>

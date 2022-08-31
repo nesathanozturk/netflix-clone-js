@@ -1,0 +1,135 @@
+* {
+    margin: 0; /* Tüm sayfayı kaplar */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+
+.row_poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms; /* Efekt */
+}
+
+.row_poster:hover {
+    transform: scale(1.08); /* Fotoğrafların üzerine gelince büyüme efekti ekledik*/
+}
+
+.row__posters {
+    display: flex; /* Yan yana sıralanmaları için flex kullandık */
+    overflow-y: hidden;
+    overflow-x: scroll; /* Yatay da scrollbar ekledik */
+    padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar{ /* Ekrandaki scrollbar'ı kaldırdık */
+    display: none;
+}
+
+.row_posterLarge {
+    max-height: 250px; /* Fotoğrafların maksimum genişliğini belirttik. */
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.09); /* Fotoğrafları üzerine gelince büyüme efekti ekledik*/
+}
+
+.row {
+    color:white;
+    margin-left: 20px
+}
+
+.first {
+    margin-top: 3%;
+}
+
+.banner {
+    position: relative;
+    color: white;
+    object-fit: cover;
+    height: 550px;
+    width: 100%;
+}
+#banner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #111, transparent); /* Video ile dizi kısmına siyah efekt ekledik. */
+}
+
+.banner__contents {
+    position: relative;
+    margin-left: 30px;
+    height: 190px;
+    margin-top: -15%;
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 0.3rem;
+}
+
+.banner_desc {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    max-width: 360px;
+    height: 180px;
+}
+
+.banner_button {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 800;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner_button:hover {
+    color: black;
+    background-color: #e6e6e6;
+    transition: all 0.2s; /* Efekt */
+}
+
+.nav__logo {
+    width: 80px;
+    object-fit: contain;
+}
+
+.nav__avatar {
+    width: 30px;
+    object-fit: contain;
+}
+
+.nav {
+    position: fixed; /* Yukarıdan aşağı gelirken sabit kalması için */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav__black {
+    background-color: #111;
+}
