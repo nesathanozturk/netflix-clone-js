@@ -1,5 +1,5 @@
 * {
-    margin: 0; /* Tüm sayfayı kaplar */
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -13,30 +13,30 @@ body {
     object-fit: contain;
     max-height: 100px;
     margin-right: 10px;
-    transition: transform 450ms; /* Efekt */
+    transition: transform 450ms;
 }
 
 .row_poster:hover {
-    transform: scale(1.08); /* Fotoğrafların üzerine gelince büyüme efekti ekledik*/
+    transform: scale(1.08);
 }
 
 .row__posters {
-    display: flex; /* Yan yana sıralanmaları için flex kullandık */
+    display: flex;
     overflow-y: hidden;
-    overflow-x: scroll; /* Yatay da scrollbar ekledik */
+    overflow-x: scroll;
     padding: 20px;
 }
 
-.row_posters::-webkit-scrollbar{ /* Ekrandaki scrollbar'ı kaldırdık */
+.row_posters::-webkit-scrollbar {
     display: none;
 }
 
 .row_posterLarge {
-    max-height: 250px; /* Fotoğrafların maksimum genişliğini belirttik. */
+    max-height: 250px;
 }
 
 .row_posterLarge:hover {
-    transform: scale(1.09); /* Fotoğrafları üzerine gelince büyüme efekti ekledik*/
+    transform: scale(1.09);
 }
 
 .row {
@@ -62,7 +62,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #111, transparent); /* Video ile dizi kısmına siyah efekt ekledik. */
+    background: linear-gradient(to top, #111, transparent);
 }
 
 .banner__contents {
@@ -105,7 +105,7 @@ body {
 .banner_button:hover {
     color: black;
     background-color: #e6e6e6;
-    transition: all 0.2s; /* Efekt */
+    transition: all 0.2s;
 }
 
 .nav__logo {
@@ -119,7 +119,7 @@ body {
 }
 
 .nav {
-    position: fixed; /* Yukarıdan aşağı gelirken sabit kalması için */
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
