@@ -1,207 +1,718 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title> Ana Sayfa - Netflix</title>
-</head>
-<body>
- <!-- Navbar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ana Sayfa - Netflix</title>
+  </head>
+  <body>
+    <!-- Navbar -->
     <div class="nav" id="nav">
-        <img src="/netflix-clone/image/netflixlogo.png" alt="Netflix Logo" class="nav__logo">
-        <img src="/netflix-clone/image/netflixavatar.png" alt="Netflix Avatar" class="nav__avatar">
+      <img
+        src="/netflix-clone/image/netflixlogo.png"
+        alt="Netflix Logo"
+        class="nav__logo"
+      />
+      <img
+        src="/netflix-clone/image/netflixavatar.png"
+        alt="Netflix Avatar"
+        class="nav__avatar"
+      />
     </div>
 
-<!-- Banner -->
+    <!-- Banner -->
     <div class="banner" id="banner">
-    <video id="video" class="banner" poster="/netflix-clone/image/peakyblindersbanner.jpg" style="pointer-events: none;" src="/netflix-clone/videos/peakyblinders.mp4" type="video/mp4">
-    </video>
-    <div class="banner__contents">
+      <video
+        id="video"
+        class="banner"
+        poster="/netflix-clone/image/peakyblindersbanner.jpg"
+        style="pointer-events: none"
+        src="/netflix-clone/videos/peakyblinders.mp4"
+        type="video/mp4"
+      ></video>
+      <div class="banner__contents">
         <h1 class="banner__title">Peaky Blinders</h1>
         <div class="banner__buttons">
-            <button class="banner_button" id="btnPlayPause" accesskey="p" onclick="playPauseVideo();">Oynat</button>
-            <button class="banner_button">Listem</button>
+          <button
+            class="banner_button"
+            id="btnPlayPause"
+            accesskey="p"
+            onclick="playPauseVideo();"
+          >
+            Oynat
+          </button>
+          <button class="banner_button">Daha Fazla Bilgi</button>
         </div>
         <div class="banner_desc">
-            1919 yılında İngiltere, Birmingham'daki bir suç çetesinin başında ne pahasına olursa olsun yükselmeyi kafasına koymuş, acımasız mafya babası Tommy Shelby vardır.
+          1919 yılında İngiltere, Birmingham'daki bir suç çetesinin başında ne
+          pahasına olursa olsun yükselmeyi kafasına koymuş, acımasız mafya
+          babası Tommy Shelby vardır.
         </div>
-    </div>
+      </div>
     </div>
 
-<!-- Senin İçin En İyi Seçimler -->
+    <!-- Senin İçin En İyi Seçimler -->
     <div class="row">
-        <h2>Senin İçin En İyi Seçimler</h2>
-        <div class="row__posters">
-            <img src="/netflix-clone/image/large/Breaking Bad.jpg" alt="Breaking Bad" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Stranger Things.jpg" alt="Stranger Things" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Mr. Robot.png" alt="Mr. Robot" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Narcos.jpg" alt="Narcos" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Punisher.jpg" alt="Punisher" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/İron Fist.jpg" alt="Iron Fist" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Dark.jpg" alt="Dark" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/El Camino.jpg" alt="El Camino" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Daredevil.jpg" alt="Daredevil" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Breaking Bad.jpg" alt="Breaking Bad" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Stranger Things.jpg" alt="Stranger Things" class="row_poster row_posterLarge">
-            <img src="/netflix-clone/image/large/Mr. Robot.png" alt="Mr. Robot" class="row_poster row_posterLarge">
-        </div>
+      <h2>Senin İçin En İyi Seçimler</h2>
+      <div class="row__posters">
+        <img
+          src="/netflix-clone/image/large/Breaking Bad.jpg"
+          alt="Breaking Bad"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Mr. Robot.png"
+          alt="Mr. Robot"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Dark.jpg"
+          alt="Dark"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Breaking Bad.jpg"
+          alt="Breaking Bad"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster row_posterLarge"
+        />
+        <img
+          src="/netflix-clone/image/large/Mr. Robot.png"
+          alt="Mr. Robot"
+          class="row_poster row_posterLarge"
+        />
+      </div>
     </div>
 
-<!-- Yeni Çıkanlar -->
+    <!-- Yeni Çıkanlar -->
     <div class="row">
-        <h2>Yeni Çıkanlar</h2>
-        <div class="row__posters">
-            <img src="/netflix-clone/image/small/Breaking Bad.jpg" alt="Breaking Bad" class="row_poster">
-            <img src="/netflix-clone/image/small/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster">
-            <img src="/netflix-clone/image/small/Stranger Things.jpg" alt="Stranger Things" class="row_poster">
-            <img src="/netflix-clone/image/small/Mr. Robot.png" alt="Mr. Robot" class="row_poster">
-            <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-            <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-            <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-            <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-            <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-            <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-            <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-            <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-            <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-            <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-            <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-            <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-            <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-            <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-            <img src="/netflix-clone/image/small/Breaking Bad.jpg" alt="Breaking Bad" class="row_poster">
-        </div>
+      <h2>Yeni Çıkanlar</h2>
+      <div class="row__posters">
+        <img
+          src="/netflix-clone/image/small/Breaking Bad.jpg"
+          alt="Breaking Bad"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Mr. Robot.png"
+          alt="Mr. Robot"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Breaking Bad.jpg"
+          alt="Breaking Bad"
+          class="row_poster"
+        />
+      </div>
     </div>
 
-<!-- Trendler -->
-        <div class="row">
-            <h2>Trendler</h2>
-            <div class="row__posters">
-                <img src="/netflix-clone/image/small/Breaking Bad.jpg" alt="Breaking Bad" class="row_poster">
-                <img src="/netflix-clone/image/small/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster">
-                <img src="/netflix-clone/image/small/Stranger Things.jpg" alt="Stranger Things" class="row_poster">
-                <img src="/netflix-clone/image/small/Mr. Robot.png" alt="Mr. Robot" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-            </div>
-        </div>
+    <!-- Trendler -->
+    <div class="row">
+      <h2>Trendler</h2>
+      <div class="row__posters">
+        <img
+          src="/netflix-clone/image/small/Breaking Bad.jpg"
+          alt="Breaking Bad"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Mr. Robot.png"
+          alt="Mr. Robot"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+      </div>
+    </div>
 
-<!-- Komedi Dizileri -->
-         <div class="row">
-            <h2>Komedi Dizileri</h2>
-            <div class="row__posters">
-                <img src="/netflix-clone/image/small/Breaking Bad.jpg" alt="Breaking Bad" class="row_poster">
-                <img src="/netflix-clone/image/small/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster">
-                <img src="/netflix-clone/image/small/Stranger Things.jpg" alt="Stranger Things" class="row_poster">
-                <img src="/netflix-clone/image/small/Mr. Robot.png" alt="Mr. Robot" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-            </div>
-        </div>
+    <!-- Komedi Dizileri -->
+    <div class="row">
+      <h2>Komedi Dizileri</h2>
+      <div class="row__posters">
+        <img
+          src="/netflix-clone/image/small/Breaking Bad.jpg"
+          alt="Breaking Bad"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Mr. Robot.png"
+          alt="Mr. Robot"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+      </div>
+    </div>
 
-<!-- Aksiyon Dizileri -->
-         <div class="row">
-            <h2> Aksiyon Dizileri</h2>
-            <div class="row__posters">
-                <img src="/netflix-clone/image/small/Breaking Bad.jpg" alt="Breaking Bad" class="row_poster">
-                <img src="/netflix-clone/image/small/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster">
-                <img src="/netflix-clone/image/small/Stranger Things.jpg" alt="Stranger Things" class="row_poster">
-                <img src="/netflix-clone/image/small/Mr. Robot.png" alt="Mr. Robot" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster">
-                <img src="/netflix-clone/image/small/Stranger Things.jpg" alt="Stranger Things" class="row_poster">
-            </div>
-        </div>
+    <!-- Aksiyon Dizileri -->
+    <div class="row">
+      <h2>Aksiyon Dizileri</h2>
+      <div class="row__posters">
+        <img
+          src="/netflix-clone/image/small/Breaking Bad.jpg"
+          alt="Breaking Bad"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Mr. Robot.png"
+          alt="Mr. Robot"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster"
+        />
+      </div>
+    </div>
 
-<!-- Bilim Kurgu Filmleri -->
-         <div class="row">
-            <h2>Bilim Kurgu Filmleri</h2>
-            <div class="row__posters">
-                <img src="/netflix-clone/image/small/Breaking Bad.jpg" alt="Breaking Bad." class="row_poster">
-                <img src="/netflix-clone/image/small/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster">
-                <img src="/netflix-clone/image/small/Stranger Things.jpg" alt="Stranger Things" class="row_poster">
-                <img src="/netflix-clone/image/small/Mr. Robot.png" alt="Mr. Robot" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-            </div>
-        </div>
+    <!-- Bilim Kurgu Filmleri -->
+    <div class="row">
+      <h2>Bilim Kurgu Filmleri</h2>
+      <div class="row__posters">
+        <img
+          src="/netflix-clone/image/small/Breaking Bad.jpg"
+          alt="Breaking Bad."
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Mr. Robot.png"
+          alt="Mr. Robot"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+      </div>
+    </div>
 
-<!-- Gerilim Filmleri -->
-         <div class="row">
-            <h2>Gerilim Filmleri</h2>
-            <div class="row__posters">
-                <img src="/netflix-clone/image/small/Breaking Bad.jpg" alt="Breaking Bad" class="row_poster">
-                <img src="/netflix-clone/image/small/Peaky Blinders.jpg" alt="Peaky Blinders" class="row_poster">
-                <img src="/netflix-clone/image/small/Stranger Things.jpg" alt="Stranger Things" class="row_poster">
-                <img src="/netflix-clone/image/small/Mr. Robot.png" alt="Mr. Robot" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-                <img src="/netflix-clone/image/small/İron Fist.jpg" alt="Iron Fist" class="row_poster">
-                <img src="/netflix-clone/image/small/Dark.jpg" alt="Dark" class="row_poster">
-                <img src="/netflix-clone/image/small/El Camino.jpg" alt="El Camino" class="row_poster">
-                <img src="/netflix-clone/image/small/Daredevil.jpg" alt="Daredevil" class="row_poster">
-                <img src="/netflix-clone/image/small/Narcos.jpg" alt="Narcos" class="row_poster">
-                <img src="/netflix-clone/image/small/Punisher.jpg" alt="Punisher" class="row_poster">
-            </div>
-        </div>
+    <!-- Gerilim Filmleri -->
+    <div class="row">
+      <h2>Gerilim Filmleri</h2>
+      <div class="row__posters">
+        <img
+          src="/netflix-clone/image/small/Breaking Bad.jpg"
+          alt="Breaking Bad"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Peaky Blinders.jpg"
+          alt="Peaky Blinders"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Stranger Things.jpg"
+          alt="Stranger Things"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Mr. Robot.png"
+          alt="Mr. Robot"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/İron Fist.jpg"
+          alt="Iron Fist"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Dark.jpg"
+          alt="Dark"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/El Camino.jpg"
+          alt="El Camino"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Daredevil.jpg"
+          alt="Daredevil"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Narcos.jpg"
+          alt="Narcos"
+          class="row_poster"
+        />
+        <img
+          src="/netflix-clone/image/small/Punisher.jpg"
+          alt="Punisher"
+          class="row_poster"
+        />
+      </div>
+    </div>
 
     <!-- JavaScript -->
-        <script src="/netflix-clone/main.js"></script>
-</body>
+    <script src="/netflix-clone/main.js"></script>
+  </body>
 </html>
